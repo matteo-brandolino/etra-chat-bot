@@ -1,0 +1,9 @@
+# https://www.robotstxt.org/robotstxt.html
+User-agent: *
+Allow: /
+
+# Disallow chat pages (dynamic, user-specific content)
+Disallow: /chat/
+
+# Sitemap
+Sitemap: https://etra-chat-bot.vercel.app/sitemap.xml
