@@ -1,5 +1,6 @@
 import { createTool } from '@mastra/core/tools';
 import { z } from 'zod';
+import { logger } from '@/lib/logger';
 
 export const dateTool = createTool({
   id: 'get-current-date',
@@ -11,7 +12,7 @@ export const dateTool = createTool({
     formatted: z.string().describe('Data formattata in italiano (es: "lunedì 4 novembre 2024")'),
   }),
   execute: async () => {
-    console.log('📅 Date Tool called - getting current date');
+    logger.debug('Date Tool called - getting current date');
     const now = new Date();
 
     // Formato YYYY-MM-DD
@@ -40,7 +41,7 @@ export const dateTool = createTool({
       formatted,
     };
 
-    console.log('📅 Date Tool result:', result);
+    logger.debug('Date Tool result:', result);
     return result;
   },
 });

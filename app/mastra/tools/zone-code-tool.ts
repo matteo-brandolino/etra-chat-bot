@@ -3,6 +3,7 @@ import { z } from "zod";
 import { PgVector } from "@mastra/pg";
 import { embed } from "ai";
 import { openai } from "@ai-sdk/openai";
+import { logger } from "@/lib/logger";
 
 export const zoneCodeTool = createTool({
   id: "find-zone-collection-info",
@@ -46,12 +47,11 @@ export const zoneCodeTool = createTool({
   }),
   execute: async ({ context: { address, municipality } }) => {
     try {
-      console.log("🔍 Zone Code Tool called with:", { address, municipality });
+      logger.debug("Zone Code Tool called with:", { address, municipality });
 
       // 1. Initialize PgVector
       const pgVector = new PgVector({
-        connectionString:
-          "postgresql://etra:etra_password@localhost:5432/etra_rag",
+        connectionString: process.env.POSTGRES_URL!,
       });
 
       // 2. Normalize and combine address and municipality for vector search
@@ -60,7 +60,7 @@ export const zoneCodeTool = createTool({
       const normalizedMunicipality = municipality.toUpperCase();
       const searchQuery = `${normalizedAddress} | ${normalizedMunicipality}`;
 
-      console.log("🧮 Generating embedding for query:", searchQuery);
+      logger.debug("Generating embedding for query:", searchQuery);
 
       const embeddingPromise = embed({
         value: searchQuery,
@@ -76,12 +76,12 @@ export const zoneCodeTool = createTool({
         timeoutPromise,
       ]) as any;
 
-      console.log("✅ Embedding generated, querying vector database");
+      logger.debug("Embedding generated, querying vector database");
 
       // 3. Query the zones index to find matches
       let vectorResults;
       try {
-        console.log("🔎 Executing pgVector.query with:", {
+        logger.debug("Executing pgVector.query with:", {
           indexName: "waste_collection_zones",
           embeddingLength: embedding.length,
           topK: 3,
@@ -94,9 +94,9 @@ export const zoneCodeTool = createTool({
           includeVector: false,
         });
 
-        console.log(`📊 Vector search returned ${vectorResults.length} results`);
+        logger.debug(`Vector search returned ${vectorResults.length} results`);
       } catch (queryError) {
-        console.error("❌ Error querying vector database:", queryError);
+        logger.error("Error querying vector database:", queryError);
         return {
           zone: "",
           error: `Database query failed: ${queryError instanceof Error ? queryError.message : 'Unknown error'}`,
@@ -133,14 +133,14 @@ export const zoneCodeTool = createTool({
       }
 
       if (!bestResult) {
-        console.log(
-          "❌ No match found for municipality:",
+        logger.debug(
+          "No match found for municipality:",
           normalizedMunicipality
         );
-        console.log("📋 Top results were:");
+        logger.debug("Top results were:");
         vectorResults.slice(0, 3).forEach((r, i) => {
           const text = r.metadata?.text || "";
-          console.log(
+          logger.debug(
             `   ${i + 1}. ${text.substring(0, 80)} (score: ${r.score})`
           );
         });
@@ -153,7 +153,7 @@ export const zoneCodeTool = createTool({
 
       // Check confidence threshold
       if (bestScore < 0.75) {
-        console.log("⚠️  Low confidence match:", bestScore);
+        logger.warn("Low confidence match:", bestScore);
         const text = bestResult.metadata?.text || "";
         const parts = text.split("|").map((p: string) => p.trim());
         return {
@@ -165,8 +165,8 @@ export const zoneCodeTool = createTool({
       // With line-by-line ingestion, each result is exactly one address
       const text = bestResult.metadata?.text || "";
 
-      console.log("📄 Best match:", text);
-      console.log("🎯 Confidence score:", bestScore);
+      logger.debug("Best match:", text);
+      logger.debug("Confidence score:", bestScore);
 
       // Format: INDIRIZZO | COMUNE | CODICE_INDIRIZZO | CODICE_COMUNE
       const parts = text.split("|").map((p: string) => p.trim());
@@ -175,7 +175,7 @@ export const zoneCodeTool = createTool({
       const foundMunicipality = parts[1];
       const addressCode = parts[2];
 
-      console.log("🏠 Found:", {
+      logger.debug("Found:", {
         address: foundAddress,
         municipality: foundMunicipality,
         addressCode,
@@ -197,7 +197,7 @@ export const zoneCodeTool = createTool({
         tipoUtenza: "UTZ-D-1",
       };
 
-      console.log("🌐 Calling ETRA API with params:", apiParams);
+      logger.debug("Calling ETRA API with params:", apiParams);
 
       // Add timeout to fetch
       const controller = new AbortController();
@@ -218,7 +218,7 @@ export const zoneCodeTool = createTool({
         );
       } catch (fetchError) {
         clearTimeout(timeoutId);
-        console.log("❌ ETRA API call failed:", fetchError);
+        logger.error("ETRA API call failed:", fetchError);
         return {
           zone: "",
           error: `ETRA API call failed: ${fetchError instanceof Error ? fetchError.message : "Timeout or network error"}`,
@@ -227,7 +227,7 @@ export const zoneCodeTool = createTool({
         clearTimeout(timeoutId);
       }
 
-      console.log("📡 ETRA API response status:", response.status);
+      logger.debug("ETRA API response status:", response.status);
 
       if (!response.ok) {
         return {
@@ -237,7 +237,7 @@ export const zoneCodeTool = createTool({
       }
 
       const collectionInfo = await response.text();
-      console.log("📄 ETRA API response length:", collectionInfo.length);
+      logger.debug("ETRA API response length:", collectionInfo.length);
 
       // 6. Parse HTML table to extract zone from first row with valid zone (not "-")
       const rowRegex =
@@ -262,7 +262,7 @@ export const zoneCodeTool = createTool({
         };
       }
 
-      console.log("✅ Zone found:", zone);
+      logger.success("Zone found:", zone);
 
       return { zone };
     } catch (error) {

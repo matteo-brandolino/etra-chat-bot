@@ -1,0 +1,123 @@
+# INFORMAZIONI CALENDARIO
+# Copertina del calendario per la raccolta differenziata 2025 del Comune di Pozzoleone.
+# Pagina del calendario per la raccolta differenziata di marzo con istruzioni per l'olio alimentare.
+# Pagina del calendario per la raccolta differenziata di ottobre con illustrazione e messaggio sul riciclo dei vestiti.
+# Pagina del calendario per la raccolta differenziata di novembre con istruzioni sui rifiuti.
+# Pagina con istruzioni per l'uso corretto dei contenitori e divieti relativi alla gestione dei rifiuti.
+# Pagina con indicazioni per una corretta differenziazione dei rifiuti.
+# Pagina informativa sui tipi di rifiuti e modalità di conferimento.
+# Pagina con informazioni sui centri di raccolta e modalità di accesso.
+# Pagina con informazioni sui centri di raccolta e modalità di conferimento.
+# Pagina informativa con contatti e orari degli sportelli per il servizio clienti.
+
+2023-01-03 Zona A: Umido organico, Secco
+2023-01-06 Zona A: Umido organico
+2023-01-10 Zona A: Umido organico, Plastica e metalli
+2023-03-14 Zona A: Umido organico
+2023-03-16 Zona A: Umido organico, Secco residuo
+2023-03-21 Zona A: Umido organico
+2023-03-24 Zona A: Plastica e metalli, Umido organico
+2023-03-27 Zona A: Umido organico
+2023-03-28 Zona A: Umido organico
+2023-03-30 Zona A: Umido organico, Secco residuo
+2023-02-03 Zona A: Secco residuo, Umido organico
+2023-02-06 Zona A: Secco residuo, Umido organico, Plastica e metalli
+2023-02-11 Zona A: Umido organico
+2023-10-13 Zona A: Secco residuo
+2023-10-14 Zona A: Secco residuo, Umido organico
+2023-10-18 Zona A: Umido organico
+2023-10-21 Zona A: Umido organico, Plastica e metalli
+2023-10-25 Zona A: Umido organico
+2023-10-28 Zona A: Secco residuo, Umido organico
+2023-03-14 Zona A: Secco residuo, Umido organico
+2023-03-18 Zona A: Umido organico
+2023-03-21 Zona A: Umido organico, Plastica e metalli
+2023-03-25 Zona A: Umido organico
+2023-03-28 Zona A: Umido organico, Secco residuo
+2025-04-01 Zona A: Umido organico
+2025-04-03 Zona A: Umido organico, Plastica e metalli
+2025-04-08 Zona A: Umido organico
+2025-04-11 Zona A: Umido organico, Secco residuo
+2023-04-14 Zona A: Umido organico
+2023-04-15 Zona A: Umido organico
+2023-04-17 Zona A: Plastica e metalli, Umido organico
+2023-04-21 Zona A: Umido organico
+2023-04-25 Zona A: Secco residuo
+2023-04-28 Zona A: Umido organico
+2023-05-02 Zona A: Umido organico, Plastica e metalli
+2023-05-06 Zona A: Umido organico
+2023-05-09 Zona A: Umido organico, Secco
+2023-03-13 Zona A: Umido organico
+2023-03-16 Zona A: Plastica e metalli, Umido organico
+2023-03-20 Zona A: Umido organico
+2023-03-23 Zona A: Umido organico, Secco residuo
+2023-03-27 Zona A: Umido organico
+2023-03-30 Zona A: Plastica e metalli, Umido organico
+2024-06-03 Zona A: Secco residuo, Umido organico
+2024-06-06 Zona A: Vetro, Secco residuo, Umido organico
+2024-06-09 Zona A: Secco residuo, Umido organico
+2024-06-10 Zona A: Secco residuo, Umido organico
+2023-10-13 Zona A: Plastica e metalli, Umido organico
+2023-10-16 Zona A: Umido organico
+2023-10-19 Zona A: Umido organico
+2023-10-20 Zona A: Umido organico, Secco residuo
+2023-10-24 Zona A: Umido organico
+2023-10-27 Zona A: Plastica e metalli, Umido organico
+2023-07-01 Zona U: Umido organico
+2023-07-03 Zona U: Umido organico, Secco
+2023-07-08 Zona U: Umido organico
+2023-07-11 Zona U: Umido organico, Plastica e metalli
+2023-11-14 Zona A: Umido organico
+2023-11-15 Zona A: Umido organico
+2023-11-17 Zona A: Secco residuo, Umido organico
+2023-11-21 Zona A: Umido organico
+2023-11-24 Zona A: Umido organico, Plastica e metalli
+2023-11-29 Zona A: Umido organico
+2024-08-01 Zona A: Umido organico, Secco residuo
+2024-08-05 Zona A: Umido organico
+2024-08-08 Zona A: Umido organico, Plastica e metalli
+2024-08-12 Zona A: Umido organico
+2023-08-15 Zona A: Umido organico, Secco residuo
+2023-08-19 Zona A: Umido organico
+2023-08-22 Zona A: Umido organico, Plastica e metalli
+2023-08-26 Zona A: Umido organico
+2023-08-29 Zona A: Secco residuo, Umido organico
+2023-09-02 Zona A: Umido organico
+2023-09-05 Zona A: Plastica e metalli, Umido organico
+2023-09-09 Zona A: Umido organico
+2023-09-12 Zona A: Secco residuo, Umido organico
+2023-03-14 Zona A: Umido organico
+2023-03-16 Zona A: Umido organico
+2023-03-19 Zona A: Umido organico, Plastica e metalli
+2023-03-23 Zona A: Umido organico
+2023-03-26 Zona A: Umido organico, Secco residuo
+2023-03-30 Zona A: Umido organico
+2023-11-14 Zona A: Umido organico
+2023-11-17 Zona A: Umido organico, Plastica e metalli
+2023-11-21 Zona A: Umido organico
+2023-11-24 Zona A: Umido organico, Secco residuo
+2023-11-28 Zona A: Umido organico
+2023-11-30 Zona A: Plastica e metalli, Umido organico
+2023-11-14 Zona A: Plastica e metalli, Umido organico
+2023-11-18 Zona A: Umido organico
+2023-11-21 Zona A: Secco residuo, Umido organico
+2023-11-25 Zona A: Umido organico
+2023-11-28 Zona A: Umido organico, Plastica e metalli
+2023-12-02 Zona A: Umido organico
+2023-12-05 Zona A: Secco, Umido organico
+2023-12-09 Zona A: Umido organico
+2023-12-12 Zona A: Plastica e metalli, Umido organico
+2023-12-16 Zona A: Umido organico
+2023-12-19 Zona A: Secco residuo, Umido organico
+2023-12-23 Zona A: Umido organico
+2023-12-26 Zona A: Plastica e metalli
+2023-12-30 Zona A: Umido organico
+2026-01-02 Zona A: Umido organico, Secco
+2026-01-06 Zona A: Umido organico
+2026-01-09 Zona A: Umido organico, Plastica e metalli
+2026-01-13 Zona A: Umido organico
+2026-01-16 Zona A: Secco, Umido organico
+2026-01-20 Zona A: Umido organico
+2026-01-23 Zona A: Plastica e metalli, Umido organico
+2026-01-27 Zona A: Umido organico
+2026-01-30 Zona A: Umido organico, Secco

@@ -6,12 +6,11 @@ import { ragAgent } from "./agents/rag-agent";
 export const mastra = new Mastra({
   agents: { ragAgent },
   storage: new PostgresStore({
-    connectionString: "postgresql://etra:etra_password@localhost:5432/etra_rag",
+    connectionString: process.env.POSTGRES_URL!,
   }),
   vectors: {
     wasteCollectionStore: new PgVector({
-      connectionString:
-        "postgresql://etra:etra_password@localhost:5432/etra_rag",
+      connectionString: process.env.POSTGRES_URL!,
     }),
   },
   logger: new PinoLogger({

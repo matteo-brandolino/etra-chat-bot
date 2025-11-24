@@ -6,6 +6,9 @@ import { saveChat, saveMessages, getChatById, getMessagesByChatId } from "@/lib/
 import { drizzle } from "drizzle-orm/postgres-js";
 import postgres from "postgres";
 import { user } from "@/lib/db/schema";
+import { checkRateLimit } from "@/lib/rate-limit";
+import { chatRequestSchema } from "@/lib/validations/chat";
+import { logger } from "@/lib/logger";
 
 export const runtime = "nodejs";
 export const dynamic = "force-dynamic";
@@ -44,15 +47,41 @@ function transformMessages(messages: any[]) {
 
 export async function POST(req: NextRequest) {
   try {
-    const body = await req.json();
-    const { id, messages } = body;
+    // Rate limiting check
+    const ip = req.headers.get('x-forwarded-for') ||
+               req.headers.get('x-real-ip') ||
+               'anonymous';
 
-    if (!messages || !Array.isArray(messages) || messages.length === 0) {
-      return new Response(JSON.stringify({ error: "Messages required" }), {
+    const { success, headers } = await checkRateLimit(ip);
+
+    if (!success) {
+      return new Response(JSON.stringify({
+        error: 'Too many requests. Please try again later.'
+      }), {
+        status: 429,
+        headers: {
+          'Content-Type': 'application/json',
+          ...headers,
+        },
+      });
+    }
+
+    const body = await req.json();
+
+    // Validate input with Zod
+    const validation = chatRequestSchema.safeParse(body);
+
+    if (!validation.success) {
+      return new Response(JSON.stringify({
+        error: 'Invalid request format',
+        details: validation.error.issues
+      }), {
         status: 400,
         headers: { "Content-Type": "application/json" },
       });
     }
+
+    const { id, messages } = validation.data;
 
     // 1. Ottieni o crea un anonymous user ID
     const cookieStore = await cookies();
@@ -68,9 +97,9 @@ export async function POST(req: NextRequest) {
         sameSite: "lax",
         maxAge: 60 * 60 * 24 * 365, // 1 year
       });
-      console.log("🆔 Created new anonymous user ID:", anonymousUserId);
+      logger.debug("Created new anonymous user ID:", anonymousUserId);
     } else {
-      console.log("🆔 Using existing anonymous user ID:", anonymousUserId);
+      logger.debug("Using existing anonymous user ID:", anonymousUserId);
     }
 
     // Assicurati che l'utente esista nel database
@@ -83,21 +112,21 @@ export async function POST(req: NextRequest) {
         password: null,
       }).onConflictDoNothing();
       if (isNewUser) {
-        console.log("✅ Created anonymous user in database");
+        logger.debug("Created anonymous user in database");
       } else {
-        console.log("✅ Ensured anonymous user exists in database");
+        logger.debug("Ensured anonymous user exists in database");
       }
     } catch (error: any) {
-      console.error("Error ensuring anonymous user exists:", error);
+      logger.error("Error ensuring anonymous user exists:", error);
     }
     await client.end();
 
     // 2. Verifica se la chat esiste, altrimenti creala
-    console.log("🔍 Checking if chat exists:", id);
+    logger.debug("Checking if chat exists:", id);
     const existingChat = await getChatById({ id });
 
     if (!existingChat) {
-      console.log("💾 Creating new chat:", { id, userId: anonymousUserId });
+      logger.debug("Creating new chat:", { id, userId: anonymousUserId });
       try {
         await saveChat({
           id,
@@ -105,14 +134,13 @@ export async function POST(req: NextRequest) {
           title: "New Chat",
           visibility: "private",
         });
-        console.log("✅ Chat created successfully");
+        logger.success("Chat created successfully");
       } catch (error) {
         // Se la chat esiste già (race condition), ignora l'errore
-        console.error("❌ Error creating chat:", error);
-        console.log("Chat might already exist, continuing...");
+        logger.debug("Error creating chat (might already exist):", error);
       }
     } else {
-      console.log("✅ Chat already exists");
+      logger.debug("Chat already exists");
     }
 
     // 3. Salva solo i messaggi nuovi (evita duplicati)
@@ -135,14 +163,14 @@ export async function POST(req: NextRequest) {
           })),
         });
       } catch (error) {
-        console.error("Error saving messages:", error);
+        logger.error("Error saving messages:", error);
         // Non bloccare lo streaming se il salvataggio fallisce
       }
     }
 
     const transformedMessages = transformMessages(messages);
 
-    console.log("🚀 Calling Mastra agent directly:", {
+    logger.debug("Calling Mastra agent directly:", {
       chatId: id,
       messageCount: transformedMessages.length,
       lastMessage: transformedMessages[transformedMessages.length - 1],
@@ -150,11 +178,11 @@ export async function POST(req: NextRequest) {
 
     // Ottieni l'agent ragAgent da Mastra
     const ragAgent = mastra.getAgent("ragAgent");
-    console.log("✅ Agent retrieved:", ragAgent?.name);
+    logger.debug("Agent retrieved:", ragAgent?.name);
 
     // Chiama stream con formato AI SDK
     // Note: format: "aisdk" è deprecato ma necessario per avere toUIMessageStreamResponse()
-    console.log("📤 Starting stream with options:", {
+    logger.debug("Starting stream with options:", {
       format: "aisdk",
       threadId: id,
       resourceId: id,
@@ -168,23 +196,23 @@ export async function POST(req: NextRequest) {
         threadId: id,
         resourceId: id,
       });
-      console.log("✅ Stream created successfully");
+      logger.success("Stream created successfully");
     } catch (streamError) {
-      console.error("❌ Error creating stream:", streamError);
+      logger.error("Error creating stream:", streamError);
       throw streamError;
     }
 
     // Ritorna la risposta in formato compatibile con useChat
     try {
       const response = stream.toUIMessageStreamResponse();
-      console.log("✅ Response created, streaming to client");
+      logger.success("Response created, streaming to client");
       return response;
     } catch (responseError) {
-      console.error("❌ Error creating response:", responseError);
+      logger.error("Error creating response:", responseError);
       throw responseError;
     }
   } catch (error) {
-    console.error("❌ API error:", error);
+    logger.error("API error:", error);
     return new Response(
       JSON.stringify({
         error: "Internal server error",

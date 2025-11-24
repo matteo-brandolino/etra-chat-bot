@@ -2,6 +2,7 @@ import { createTool } from '@mastra/core/tools';
 import { embed } from 'ai';
 import { openai } from '@ai-sdk/openai';
 import { z } from 'zod';
+import { logger } from '@/lib/logger';
 
 export const ragTool = createTool({
   id: 'search-waste-calendar',
@@ -29,10 +30,10 @@ export const ragTool = createTool({
   execute: async ({ context, mastra }) => {
     const { query } = context;
 
-    console.log('🔍 RAG Tool called with query:', query);
+    logger.debug('RAG Tool called with query:', query);
 
     if (!mastra) {
-      console.error('❌ RAG Tool error: Mastra instance not available');
+      logger.error('RAG Tool error: Mastra instance not available');
       return {
         results: [],
         found: false,
@@ -55,7 +56,7 @@ export const ragTool = createTool({
         topK: 5,
       });
 
-      console.log('🔍 RAG Tool returned', results.length, 'results');
+      logger.debug('RAG Tool returned', results.length, 'results');
 
       if (results.length === 0) {
         return {
@@ -73,7 +74,7 @@ export const ragTool = createTool({
       };
 
     } catch (error) {
-      console.error('❌ RAG Tool error:', error);
+      logger.error('RAG Tool error:', error);
       return {
         results: [],
         found: false,

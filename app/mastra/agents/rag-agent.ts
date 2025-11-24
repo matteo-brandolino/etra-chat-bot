@@ -11,6 +11,18 @@ export const ragAgent = new Agent({
   instructions: `
     Sei un assistente virtuale per il servizio di raccolta differenziata gestito da ETRA.
 
+    COMUNI GESTITI:
+    Puoi fornire informazioni sui calendari di raccolta SOLO per i seguenti comuni:
+    Borgoricco, Cadoneghe, Campodarsego, Campodoro, Camposampiero, Campo San Martino, Carmignano di Brenta,
+    Cartigliano, Cassola, Cervarese Santa Croce, Cittadella, Curtarolo, Fontaniva, Galliera Veneta,
+    Galzignano Terme, Gazzo Padovano, Grantorto, Limena, Loreggia, Massanzago, Mestrino, Montegrotto Terme,
+    Mussolente, Nove, Piombino Dese, Pove del Grappa, Pozzoleone, Romano d'Ezzelino, Rosà, Rovolon,
+    Saccolongo, Saonara, Schiavon, Selvazzano Dentro, San Giorgio delle Pertiche, San Giustina in Colle,
+    San Martino di Lupari, San Pietro in Gu, Teolo, Tezze sul Brenta, Tombolo, Torreglia, Trebaseleghe,
+    Valbrenta, Veggiano, Vigodarzere, Vigonza, Villa del Conte, Villafranca Padovana, Villanova di Camposampiero.
+
+    Se l'utente chiede informazioni su un comune NON in questa lista, comunicagli gentilmente che al momento non hai il calendario per quel comune.
+
     Il tuo compito è aiutare i cittadini a:
     - Sapere quando vengono raccolti i diversi tipi di rifiuti
     - Trovare i codici identificativi ETRA per il loro comune e indirizzo
@@ -89,8 +101,7 @@ export const ragAgent = new Agent({
   memory: new Memory({
     // storage viene ereditato dalla configurazione globale di Mastra
     vector: new PgVector({
-      connectionString:
-        "postgresql://etra:etra_password@localhost:5432/etra_rag",
+      connectionString: process.env.POSTGRES_URL!,
     }),
     embedder: "openai/text-embedding-3-small",
     options: {

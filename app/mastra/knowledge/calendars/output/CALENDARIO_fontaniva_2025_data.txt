@@ -1,0 +1,165 @@
+# INFORMAZIONI CALENDARIO
+# Copertina del calendario per la raccolta differenziata 2025 del Comune di Fontaniva.
+
+2024-01-02 Zona A: Umido organico
+2024-01-02 Zona B: Umido organico
+2024-01-04 Zona B: Umido organico
+2024-01-07 Zona A: Secco, Carta e cartone
+2024-01-08 Zona B: Vetro, Plastica e metalli
+2024-01-09 Zona A: Umido organico
+2024-01-09 Zona B: Umido organico
+2023-03-13 Zona A: Umido organico
+2023-03-13 Zona B: Umido organico
+2023-03-14 Zona A: Secco residuo
+2023-03-14 Zona B: Secco residuo, Carta e cartone
+2023-03-15 Zona A: Plastica e metalli
+2023-03-16 Zona A: Umido organico
+2023-03-16 Zona B: Umido organico
+2023-03-20 Zona A: Umido organico
+2023-03-20 Zona B: Umido organico
+2023-03-21 Zona A: Carta e cartone
+2023-03-21 Zona B: Secco residuo
+2023-03-22 Zona A: Vetro
+2023-03-22 Zona B: Plastica e metalli
+2023-03-23 Zona A: Umido organico
+2023-03-23 Zona B: Umido organico
+2023-03-27 Zona A: Umido organico
+2023-03-27 Zona B: Umido organico
+2023-03-28 Zona A: Carta e cartone
+2023-03-28 Zona B: Secco residuo
+2023-03-29 Zona A: Plastica e metalli
+2023-03-30 Zona A: Umido organico
+2023-03-30 Zona B: Umido organico
+2023-03-31 Zona A: Umido organico
+2023-02-03 Zona A: Umido organico
+2023-02-03 Zona B: Umido organico
+2023-02-04 Zona A: Carta e cartone, Secco
+2023-02-05 Zona B: Plastica e metalli
+2023-02-06 Zona A: Umido organico
+2023-02-06 Zona B: Umido organico
+2023-02-08 Zona A: Plastica e metalli
+2023-02-09 Zona B: Umido organico
+2023-02-10 Zona A: Umido organico
+2023-02-11 Zona B: Carta e cartone, Secco
+2023-02-12 Zona A: Plastica e metalli
+2023-04-13 Zona A: Umido organico
+2023-04-15 Zona A: Umido organico
+2023-04-17 Zona A: Umido organico
+2023-04-18 Zona A: Secco residuo, Carta e cartone
+2023-04-19 Zona A: Vetro, Plastica e metalli
+2023-04-20 Zona A: Umido organico
+2023-04-24 Zona A: Umido organico
+2023-04-25 Zona A: Secco residuo, Carta e cartone
+2023-04-26 Zona A: Plastica e metalli
+2023-04-27 Zona A: Umido organico
+2025-03-01 Zona A: Umido organico
+2025-03-01 Zona B: Umido organico
+2025-03-03 Zona A: Umido organico
+2025-03-03 Zona B: Umido organico
+2025-03-04 Zona A: Carta e cartone, Secco
+2025-03-05 Zona B: Vetro, Plastica e metalli
+2025-03-06 Zona A: Umido organico
+2025-03-06 Zona B: Umido organico
+2025-03-08 Zona A: Umido organico
+2025-03-10 Zona A: Umido organico
+2025-03-10 Zona B: Umido organico
+2025-03-11 Zona B: Secco
+2025-03-12 Zona A: Plastica e metalli
+2025-03-13 Zona A: Umido organico
+2025-03-17 Zona A: Umido organico
+2025-03-18 Zona A: Carta e cartone, Secco residuo
+2025-03-19 Zona A: Vetro
+2025-03-20 Zona A: Umido organico
+2025-03-24 Zona A: Umido organico
+2025-03-25 Zona A: Carta e cartone, Secco residuo
+2025-03-26 Zona A: Plastica e metalli
+2025-03-27 Zona A: Umido organico
+2025-03-31 Zona A: Umido organico
+2025-04-01 Zona A: Secco, Carta
+2025-04-01 Zona B: Umido organico, Vetro
+2025-04-02 Zona A: Umido organico
+2025-04-03 Zona B: Umido organico
+2025-04-07 Zona A: Umido organico
+2025-04-07 Zona B: Umido organico
+2025-04-08 Zona A: Secco, Carta
+2025-04-09 Zona B: Plastica e metalli
+2025-04-10 Zona A: Umido organico
+2025-04-10 Zona B: Umido organico
+2024-04-14 Zona A: Umido organico
+2024-04-15 Zona A: Carta e cartone, Secco residuo
+2024-04-16 Zona A: Vetro
+2024-04-17 Zona A: Umido organico
+2024-04-23 Zona A: Plastica e metalli
+2024-04-24 Zona A: Umido organico
+2024-04-28 Zona A: Umido organico
+2024-04-29 Zona A: Carta e cartone, Secco residuo
+2024-04-30 Zona A: Plastica e metalli
+2023-05-05 Zona A: Umido organico
+2023-05-05 Zona B: Umido organico
+2023-05-06 Zona B: Secco residuo, Carta e cartone
+2023-05-07 Zona A: Plastica e metalli
+2023-05-08 Zona A: Umido organico
+2023-05-08 Zona B: Umido organico
+2023-05-12 Zona A: Umido organico
+2023-03-13 Zona A: Secco residuo, Carta e cartone
+2023-03-14 Zona A: Vetro
+2023-03-15 Zona A: Umido organico
+2023-03-16 Zona A: Umido organico
+2023-03-20 Zona A: Secco residuo, Carta e cartone
+2023-03-21 Zona A: Plastica e metalli
+2023-03-22 Zona A: Umido organico
+2023-03-23 Zona A: Umido organico
+2023-03-27 Zona A: Secco residuo, Carta e cartone
+2023-03-28 Zona A: Plastica e metalli
+2023-03-29 Zona A: Umido organico
+2023-03-30 Zona A: Plastica e metalli, Vetro
+2023-03-31 Zona A: Umido organico
+2024-06-03 Zona A: Secco, Carta
+2024-06-03 Zona B: Secco, Carta
+2024-06-04 Zona A: Plastica e metalli
+2024-06-05 Zona A: Umido organico
+2024-06-05 Zona B: Umido organico
+2024-06-10 Zona A: Carta
+2024-06-10 Zona B: Secco, Carta
+2024-06-11 Zona A: Vetro
+2024-06-11 Zona B: Plastica e metalli
+2024-06-12 Zona A: Umido organico
+2024-06-12 Zona B: Umido organico
+2023-03-16 Zona A: Umido organico
+2023-03-17 Zona A: Secco residuo, Carta e cartone
+2023-03-18 Zona A: Plastica e metalli
+2023-03-19 Zona A: Umido organico
+2023-03-23 Zona A: Umido organico
+2023-03-24 Zona A: Secco residuo, Carta e cartone
+2023-03-25 Zona A: Vetro, Plastica e metalli
+2023-03-26 Zona A: Umido organico
+2023-03-30 Zona A: Umido organico
+2023-07-01 Zona A: Carta e cartone
+2023-07-01 Zona B: Secco
+2023-07-02 Zona A: Plastica e metalli
+2023-07-03 Zona A: Umido organico
+2023-07-03 Zona B: Umido organico
+2023-07-04 Zona A: Umido organico
+2023-07-05 Zona B: Umido organico
+2023-07-07 Zona A: Umido organico
+2023-07-07 Zona B: Umido organico
+2023-07-08 Zona A: Secco, Carta e cartone
+2023-07-09 Zona B: Plastica e metalli
+2023-07-10 Zona A: Vetro
+2023-07-10 Zona B: Plastica e metalli
+2023-07-11 Zona A: Umido organico
+2023-07-11 Zona B: Umido organico
+2023-11-13 Zona A: Umido organico
+2023-11-14 Zona A: Umido organico
+2023-11-15 Zona A: Secco residuo, Carta e cartone
+2023-11-16 Zona A: Plastica e metalli
+2023-11-17 Zona A: Umido organico
+2023-11-18 Zona A: Umido organico
+2023-11-21 Zona A: Umido organico
+2023-11-22 Zona A: Secco residuo, Carta e cartone
+2023-11-23 Zona A: Plastica e metalli, Vetro
+2023-11-24 Zona A: Umido organico
+2023-11-28 Zona A: Umido organico
+2023-11-29 Zona A: Carta e cartone, Secco residuo
+2023-11-30 Zona A: Plastica e metalli
+2023-11-31 Zona A: Umido organico

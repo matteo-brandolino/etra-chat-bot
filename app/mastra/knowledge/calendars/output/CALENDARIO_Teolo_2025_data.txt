@@ -1,0 +1,244 @@
+# INFORMAZIONI CALENDARIO
+# Copertina del calendario per la raccolta differenziata 2025 del Comune di Teolo.
+# Pagina con istruzioni per l'uso corretto dei contenitori e divieti relativi alla gestione dei rifiuti.
+# Pagina con indicazioni per una corretta differenziazione dei rifiuti.
+# Pagina informativa sulla raccolta differenziata di vari tipi di rifiuti.
+# Pagina con informazioni sui centri di raccolta e orari di apertura.
+# Pagina con informazioni sui centri di raccolta e modalità di conferimento.
+# Pagina con informazioni di contatto e orari degli sportelli per il servizio clienti di Etra.
+
+2023-01-06 Zona A: Vetro, Carta
+2023-01-06 Zona B: Carta
+2023-01-08 Zona A: Vetro, Organico
+2023-01-08 Zona B: Vetro, Secco
+2023-03-13 Zona A: Verde e ramaglie
+2023-03-14 Zona A: Plastica e metalli
+2023-03-15 Zona A: Secco residuo
+2023-03-20 Zona A: Carta e cartone, Verde e ramaglie
+2023-03-21 Zona A: Carta e cartone
+2023-03-22 Zona A: Secco residuo, Verde e ramaglie
+2023-03-27 Zona A: Verde e ramaglie
+2023-03-28 Zona A: Plastica e metalli
+2023-03-29 Zona A: Secco residuo
+2023-02-01 Zona A: Umido organico, Carta e cartone
+2023-02-01 Zona B: Carta e cartone
+2023-02-03 Zona A: Secco residuo, Vetro
+2023-02-03 Zona B: Carta e cartone
+2023-02-05 Zona A: Secco residuo
+2023-02-05 Zona B: Vetro
+2023-02-10 Zona A: Plastica e metalli
+2023-02-10 Zona B: Plastica e metalli
+2023-02-12 Zona A: Secco residuo
+2023-10-18 Zona A: Carta e cartone, Verde e ramaglie
+2023-10-18 Zona B: Carta e cartone
+2023-10-19 Zona A: Verde e ramaglie, Secco residuo
+2023-10-24 Zona A: Vetro
+2023-10-25 Zona A: Plastica e metalli
+2023-10-25 Zona B: Plastica e metalli
+2023-10-26 Zona A: Secco residuo
+2025-03-03 Zona A: Umido organico, Carta e cartone
+2025-03-03 Zona B: Carta e cartone
+2025-03-04 Zona A: Vetro
+2025-03-04 Zona B: Carta e cartone
+2025-03-05 Zona B: Secco residuo, Vetro
+2025-03-10 Zona A: Umido organico
+2025-03-10 Zona B: Vetro
+2025-03-11 Zona A: Plastica e metalli
+2025-03-11 Zona B: Plastica e metalli
+2025-03-12 Zona B: Secco residuo
+2025-03-18 Zona A: Verde e ramaglie, Carta e cartone
+2025-03-18 Zona B: Carta e cartone
+2025-03-19 Zona A: Verde e ramaglie
+2025-03-19 Zona B: Secco residuo
+2025-03-24 Zona A: Vetro
+2025-03-25 Zona A: Plastica e metalli
+2025-03-25 Zona B: Plastica e metalli
+2025-03-26 Zona A: Secco residuo
+2025-04-01 Zona A: Umido organico, Carta
+2025-04-01 Zona B: Carta
+2025-04-02 Zona B: Umido organico, Vetro
+2025-04-07 Zona A: Umido organico
+2025-04-08 Zona A: Plastica e metalli, Vetro
+2025-04-08 Zona B: Plastica e metalli
+2025-04-09 Zona B: Secco
+2025-04-09 Zona A: Vetro
+2023-04-13 Zona A: 
+2023-04-14 Zona A: Carta e cartone, Verde e ramaglie
+2023-04-15 Zona A: Carta e cartone
+2023-04-16 Zona A: Verde e ramaglie, Secco residuo
+2023-04-17 Zona A: 
+2023-04-18 Zona A: 
+2023-04-19 Zona A: Vetro
+2023-04-20 Zona A: 
+2023-04-21 Zona A: Verde e ramaglie, Plastica e metalli
+2023-04-22 Zona A: Plastica e metalli
+2023-04-23 Zona A: Secco residuo
+2023-04-24 Zona A: Verde e ramaglie
+2023-04-25 Zona A: 
+2023-04-26 Zona A: 
+2023-04-27 Zona A: 
+2023-04-28 Zona A: Carta e cartone, Verde e ramaglie
+2023-04-29 Zona A: Carta e cartone
+2023-04-30 Zona A: Verde e ramaglie, Secco residuo
+2023-05-05 Zona A: Umido organico
+2023-05-05 Zona B: Vetro
+2023-05-06 Zona A: Vetro, Plastica e metalli
+2023-05-06 Zona B: Plastica e metalli
+2023-05-07 Zona A: Secco
+2023-05-07 Zona B: Vetro
+2023-03-13 Zona A: Verde e ramaglie, Carta e cartone
+2023-03-13 Zona B: Carta e cartone
+2023-03-15 Zona B: Secco residuo, Verde e ramaglie
+2023-03-19 Zona A: Vetro
+2023-03-20 Zona A: Plastica e metalli, Verde e ramaglie
+2023-03-20 Zona B: Plastica e metalli
+2023-03-21 Zona B: Verde e ramaglie
+2023-03-27 Zona A: Carta e cartone, Verde e ramaglie
+2023-03-27 Zona B: Carta e cartone
+2023-03-29 Zona B: Secco residuo, Verde e ramaglie
+2023-06-02 Zona A: Umido organico
+2023-06-02 Zona B: Plastica e metalli
+2023-06-03 Zona A: Vetro
+2023-06-03 Zona B: Plastica e metalli
+2023-06-04 Zona A: Secco
+2023-06-05 Zona A: Vetro
+2023-06-05 Zona B: Carta e cartone
+2023-06-06 Zona A: Vetro
+2023-06-06 Zona B: Carta e cartone
+2023-03-16 Zona A: Vetro
+2023-03-17 Zona A: Plastica e metalli
+2023-03-17 Zona B: Verde e ramaglie, Plastica e metalli
+2023-03-18 Zona A: Secco residuo
+2023-03-23 Zona A: Carta e cartone, Verde e ramaglie
+2023-03-24 Zona A: Carta e cartone
+2023-03-25 Zona A: Secco residuo
+2023-03-25 Zona B: Verde e ramaglie
+2023-03-30 Zona A: Vetro
+2023-07-01 Zona A: Vetro, Plastica e metalli
+2023-07-01 Zona B: Plastica e metalli
+2023-07-02 Zona A: Secco
+2023-07-02 Zona B: Vetro
+2023-07-08 Zona A: Vetro, Carta e cartone
+2023-07-08 Zona B: Carta e cartone
+2023-07-09 Zona A: Secco
+2023-07-09 Zona B: Vetro, Secco
+2023-11-14 Zona A: Vetro
+2023-11-15 Zona A: Verde e ramaglie, Plastica e metalli
+2023-11-15 Zona B: Plastica e metalli
+2023-11-16 Zona A: Secco residuo
+2023-11-16 Zona B: Verde e ramaglie
+2023-11-21 Zona A: Carta e cartone, Verde e ramaglie
+2023-11-22 Zona A: Carta e cartone
+2023-11-22 Zona B: Verde e ramaglie, Secco residuo
+2023-11-28 Zona A: Vetro
+2023-11-29 Zona A: Verde e ramaglie, Plastica e metalli
+2023-11-29 Zona B: Plastica e metalli
+2023-11-30 Zona A: Secco residuo
+2023-11-30 Zona B: Verde e ramaglie
+2023-08-01 Zona A: Umido organico
+2023-08-01 Zona B: Carta e cartone
+2023-08-05 Zona A: Vetro
+2023-08-05 Zona A: Carta e cartone
+2023-08-05 Zona B: Carta e cartone
+2023-08-06 Zona A: Vetro
+2023-08-06 Zona B: Secco residuo
+2023-08-11 Zona A: Vetro
+2023-08-11 Zona B: Plastica e metalli
+2023-08-12 Zona A: Vetro
+2023-08-12 Zona B: Plastica e metalli
+2023-03-13 Zona A: Secco residuo
+2023-03-14 Zona A: Verde e ramaglie
+2023-03-18 Zona A: Verde e ramaglie, Carta e cartone
+2023-03-19 Zona A: Carta e cartone
+2023-03-20 Zona A: Verde e ramaglie, Secco residuo
+2023-03-25 Zona A: Vetro
+2023-03-26 Zona A: Plastica e metalli, Verde e ramaglie
+2023-03-27 Zona A: Secco residuo
+2023-03-28 Zona A: Verde e ramaglie
+2023-09-02 Zona A: Vetro, Organico
+2023-09-02 Zona B: Organico
+2023-09-03 Zona A: Carta
+2023-09-03 Zona B: Vetro, Organico, Secco
+2023-09-08 Zona A: Verde
+2023-09-09 Zona A: Vetro, Plastica e metalli
+2023-09-09 Zona B: Plastica e metalli
+2023-09-10 Zona A: Secco
+2023-09-10 Zona B: Organico
+2023-09-12 Zona A: Vetro
+2023-03-16 Zona A: Carta e cartone, Verde e ramaglie
+2023-03-16 Zona B: Carta e cartone
+2023-03-17 Zona A: Verde e ramaglie, Secco residuo
+2023-03-22 Zona A: Vetro
+2023-03-23 Zona A: Verde e ramaglie, Plastica e metalli
+2023-03-23 Zona B: Plastica e metalli
+2023-03-24 Zona A: Secco residuo
+2023-03-24 Zona B: Verde e ramaglie
+2023-03-30 Zona A: Verde e ramaglie, Carta e cartone
+2023-03-30 Zona B: Carta e cartone
+2023-10-01 Zona B: Vetro
+2023-10-02 Zona A: Vetro, Plastica e metalli
+2023-10-02 Zona B: Plastica e metalli
+2023-10-03 Zona A: Secco
+2023-10-06 Zona A: Umido organico
+2023-10-07 Zona B: Vetro, Plastica e metalli
+2023-10-08 Zona A: Secco
+2023-10-09 Zona B: Vetro
+2023-03-13 Zona A: Carta e cartone, Verde e ramaglie
+2023-03-14 Zona B: Carta e cartone
+2023-03-15 Zona A: Secco residuo
+2023-03-15 Zona B: Secco residuo, Verde e ramaglie
+2023-03-20 Zona A: Vetro
+2023-03-21 Zona A: Verde e ramaglie, Plastica e metalli
+2023-03-21 Zona B: Plastica e metalli
+2023-03-22 Zona A: Secco residuo
+2023-03-22 Zona B: Verde e ramaglie
+2023-03-27 Zona A: Verde e ramaglie, Carta e cartone
+2023-03-28 Zona B: Carta e cartone
+2023-03-29 Zona A: Secco residuo
+2023-03-29 Zona B: Secco residuo, Verde e ramaglie
+2023-11-03 Zona A: Vetro
+2023-11-04 Zona A: Plastica e metalli, Vetro
+2023-11-04 Zona B: Plastica e metalli
+2023-11-05 Zona A: Secco
+2023-11-05 Zona B: Vetro
+2023-11-10 Zona A: Vetro, Carta e cartone
+2023-11-10 Zona B: Carta e cartone
+2023-11-12 Zona A: Secco
+2023-11-12 Zona B: Vetro
+2023-11-17 Zona A: Vetro
+2023-11-18 Zona A: Verde e ramaglie, Plastica e metalli
+2023-11-19 Zona A: Secco residuo
+2023-11-19 Zona B: Verde e ramaglie
+2023-11-24 Zona A: Carta e cartone, Verde e ramaglie
+2023-11-25 Zona A: Carta e cartone
+2023-11-26 Zona A: Verde e ramaglie, Secco residuo
+2023-12-01 Zona A: Umido organico, Vetro
+2023-12-02 Zona A: Plastica e metalli
+2023-12-02 Zona B: Plastica e metalli
+2023-12-03 Zona A: Secco
+2023-12-08 Zona A: Carta e cartone, Vetro
+2023-12-08 Zona B: Carta e cartone
+2023-12-10 Zona B: Secco, Vetro
+2023-12-15 Zona A: Vetro
+2023-12-16 Zona A: Plastica e metalli
+2023-12-17 Zona A: Secco residuo
+2023-12-22 Zona A: Verde e ramaglie, Carta e cartone
+2023-12-23 Zona A: Carta e cartone
+2023-12-24 Zona A: Secco residuo, Verde e ramaglie
+2023-12-29 Zona A: Vetro
+2023-12-30 Zona A: Plastica e metalli
+2023-12-31 Zona A: Secco residuo
+2026-01-06 Zona A: Vetro, Carta
+2026-01-06 Zona B: Carta
+2026-01-07 Zona B: Vetro, Secco
+2026-01-12 Zona A: Umido organico
+2026-01-13 Zona A: Plastica e metalli
+2026-01-13 Zona B: Plastica e metalli
+2026-01-14 Zona B: Secco
+2026-01-19 Zona A: Carta, Vetro
+2026-01-19 Zona B: Carta
+2026-01-20 Zona B: Secco, Vetro
+2026-01-26 Zona A: Umido organico
+2026-01-27 Zona A: Plastica e metalli
+2026-01-27 Zona B: Plastica e metalli
+2026-01-28 Zona A: Secco
