@@ -318,7 +318,9 @@ export async function updateChatLastContextById({
       .set({ lastContext: context })
       .where(eq(chat.id, chatId));
   } catch (error) {
-    console.warn("Failed to update lastContext for chat", chatId, error);
+    if (process.env.NODE_ENV !== 'production') {
+      console.warn("Failed to update lastContext for chat", chatId, error);
+    }
     return;
   }
 }

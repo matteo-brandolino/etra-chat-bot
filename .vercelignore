@@ -1,0 +1,16 @@
+# Test files
+/tests
+playwright.config.ts
+*.test.ts
+*.spec.ts
+
+# Development scripts
+app/mastra/scripts/test-memory.ts
+app/mastra/scripts/check-db.ts
+app/mastra/scripts/query-vectors.ts
+
+# Development files
+.mastra
+.claude
+.cursor
+TODO.md
