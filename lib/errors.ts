@@ -43,6 +43,15 @@ export class ChatSDKError extends Error {
   constructor(errorCode: ErrorCode, cause?: string) {
     super();
 
+    if (!errorCode || typeof errorCode !== 'string') {
+      this.type = 'bad_request';
+      this.surface = 'api';
+      this.cause = cause || 'Invalid error code';
+      this.message = 'Something went wrong. Please try again later.';
+      this.statusCode = 500;
+      return;
+    }
+
     const [type, surface] = errorCode.split(":");
 
     this.type = type as ErrorType;

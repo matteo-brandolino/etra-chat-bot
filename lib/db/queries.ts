@@ -12,11 +12,7 @@ import {
   lt,
   type SQL,
 } from "drizzle-orm";
-import { drizzle } from "drizzle-orm/postgres-js";
-import postgres from "postgres";
 import { ChatSDKError } from "../errors";
-
-type VisibilityType = "public" | "private";
 import type { AppUsage } from "../usage";
 import { generateUUID } from "../utils";
 import {
@@ -29,24 +25,9 @@ import {
   user,
 } from "./schema";
 import { generateHashedPassword } from "./utils";
+import { db } from "./connection";
 
-// Optionally, if not using email/pass login, you can
-// use the Drizzle adapter for Auth.js / NextAuth
-// https://authjs.dev/reference/adapter/drizzle
-
-// biome-ignore lint: Forbidden non-null assertion.
-if (!process.env.POSTGRES_URL) {
-  throw new Error('POSTGRES_URL environment variable is not set');
-}
-
-// Vercel Postgres serverless configuration
-// Connection pooling is handled automatically by Vercel
-const client = postgres(process.env.POSTGRES_URL, {
-  // Serverless-friendly configuration
-  max: 1, // Single connection per serverless function
-  idle_timeout: 0.001, // Close idle connections quickly
-})
-const db = drizzle(client);
+type VisibilityType = "public" | "private";
 
 export async function getUser(email: string): Promise<User[]> {
   try {

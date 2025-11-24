@@ -3,8 +3,7 @@ import { NextRequest } from "next/server";
 import { mastra } from "@/app/mastra";
 import { generateUUID } from "@/lib/utils";
 import { saveChat, saveMessages, getChatById, getMessagesByChatId } from "@/lib/db/queries";
-import { drizzle } from "drizzle-orm/postgres-js";
-import postgres from "postgres";
+import { db } from "@/lib/db/connection";
 import { user } from "@/lib/db/schema";
 import { checkRateLimit } from "@/lib/rate-limit";
 import { chatRequestSchema } from "@/lib/validations/chat";
@@ -68,9 +67,6 @@ export async function POST(req: NextRequest) {
         maxAge: 60 * 60 * 24 * 365,
       });
 
-      const client = postgres(process.env.POSTGRES_URL!);
-      const db = drizzle(client);
-
       try {
         await db.insert(user).values({
           id: anonymousUserId,
@@ -79,8 +75,6 @@ export async function POST(req: NextRequest) {
         }).onConflictDoNothing();
       } catch (error) {
         logger.error("Error creating user:", error);
-      } finally {
-        await client.end();
       }
     }
 

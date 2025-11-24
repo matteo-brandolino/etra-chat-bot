@@ -99,7 +99,6 @@ export const ragAgent = new Agent({
   model: "openai/gpt-4o",
   tools: { ragTool, dateTool, zoneCodeTool },
   memory: new Memory({
-    // storage viene ereditato dalla configurazione globale di Mastra
     vector: new PgVector({
       connectionString: process.env.POSTGRES_URL!,
     }),

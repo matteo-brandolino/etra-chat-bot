@@ -92,7 +92,6 @@ function PureMessages({
               }
             />
           ))}
-
           <AnimatePresence mode="wait">
             {status === "submitted" && <ThinkingMessage key="thinking" />}
           </AnimatePresence>
