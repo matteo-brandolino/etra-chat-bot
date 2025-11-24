@@ -1,9 +1,7 @@
 import { Ratelimit } from "@upstash/ratelimit";
 import { kv } from "@vercel/kv";
 
-// Create rate limiter instance
-// 10 requests per 10 minutes per IP
-export const ratelimit = new Ratelimit({
+const ratelimit = new Ratelimit({
   redis: kv,
   limiter: Ratelimit.slidingWindow(10, "10 m"),
   analytics: true,

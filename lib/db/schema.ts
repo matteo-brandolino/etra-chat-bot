@@ -69,3 +69,8 @@ export const stream = pgTable(
 );
 
 export type Stream = InferSelectModel<typeof stream>;
+
+// Stub types for compatibility with template components
+export type Vote = { id: string; messageId: string };
+export type Suggestion = { id: string };
+export type Document = { id: string; createdAt: Date };
